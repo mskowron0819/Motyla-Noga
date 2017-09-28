@@ -1,0 +1,83 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+html{
+	font-family: 'Open Sans', sans-serif;
+}
+header{
+	background: url("img/LP.jpg") no-repeat center center;
+	background-size: contain;
+	width: 100%;
+}
+img{
+	width: 100%;
+}
+.main-screen-content{
+	margin-top: -120px;
+}
+.container{
+	width: 90%;
+	padding: 0;
+}
+#offers{
+	margin: 0 auto;
+
+}
+#offers div{
+	padding: 0;
+}
+.offer{
+	width: 280px;
+	height: 340px;
+	border: 1px solid #E7E7E7;
+	margin: 20px auto;
+	border-radius: 4%;
+	text-align: center;
+	color: #FFF;
+	line-height: 40px;
+	font-weight: 700;
+	font-size: 16px;
+}
+.offer-info{
+	width: 278px;
+	height: 300px;
+	background-color: #FFF;
+	border-radius: 4%;
+	border-bottom: 1px solid #E7E7E7;
+}
+.offer-logo{
+	background: url(img/dots-horizontal.png) right bottom repeat-x;
+	height: 100px;
+	position: relative;
+	width: 280px;
+}
+.logo{
+	width: 70%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.offer-description{
+	color: #000;
+	font-weight: 300;
+	position: relative;
+	height: 100px;
+	width: 100%;
+	line-height: 25px;
+	font-size: 22px;
+}
+.description{
+	width: 100%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
