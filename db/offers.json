@@ -5,140 +5,160 @@
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 2,
       "category": "Dla dzieci",
-      "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
+      "img": "https://media.go2speed.org/brand/files/cubegroup/168/logo.jpg",
       "name": "RtvEuroAgd",
-      "coupon": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradnik"
+      "description": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradnik",
+      "coupon": true
     },
     {
       "id": 3,
       "category": "kosmetyki",
-      "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
+      "img": "https://media.go2speed.org/brand/files/cubegroup/476/logo ezebra ok.jpg",
       "name": "#",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 4,
       "category": "rozrywka",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 5,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 6,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 7,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 8,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 9,
       "category": "Elektronika",
-      "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
+      "img": "https://media.go2speed.org/brand/files/cubegroup/977/EURO_logo_1.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": false
     },
     {
       "id": 10,
       "category": "Sport i Hobby",
-      "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
+      "img": "https://media.go2speed.org/brand/files/cubegroup/1092/logo_sportshop.png",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 11,
       "category": "Podróże",
-      "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
+      "img": "https://media.go2speed.org/brand/files/cubegroup/759/travelist.jpg",
       "name": "Empik",
-      "coupon": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradniki"
+      "description": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradniki",
+      "coupon": false
     },
     {
       "id": 12,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 13,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": false
     },
     {
       "id": 14,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "30% zniżki na wszystko"
+      "description": "30% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 15,
       "category": "Inne",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 16,
       "category": "Elektronika",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradnik"
+      "description": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradnik",
+      "coupon": false
     },
     {
       "id": 17,
       "category": "Inne",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 18,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "70% zniżki na wszystko"
+      "description": "70% zniżki na wszystko",
+      "coupon": false
     },
     {
       "id": 19,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     },
     {
       "id": 20,
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "coupon": "60% zniżki na wszystko"
+      "description": "60% zniżki na wszystko",
+      "coupon": true
     }
   ]
 }
