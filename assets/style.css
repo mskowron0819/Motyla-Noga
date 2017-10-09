@@ -6,7 +6,6 @@ body{
 	margin-bottom: 100px;
 }
 header{
-	background: url("img/LP.jpg") no-repeat center center;
 	background-size: contain;
 	width: 100%;
 }
@@ -17,11 +16,7 @@ img{
 	width: 90%;
 	padding: 0;
 }
-#offers{
-	margin: 0 auto;
-
-}
-#offers div{
+.offers div{
 	padding: 0;
 }
 .offer{
@@ -100,12 +95,228 @@ img{
 
 }
 .coupon-wrapper{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.coupon-wrapper .offer{
+	width:90%;
+	height: 430px;
+	position: relative;
+}
+.coupon-wrapper .offer-info{
+	width: 100%;
+	background: #F2F3F5;
+	height: 390px;
+}
+.coupon-wrapper .offer-logo{
+	width: 40%;
+	float: left;
+	height: 45%;
+	background: #FFF;
+}
+.coupon-wrapper .logo{
 	width: 90%;
-	margin: 10% 5%;
-	height: 80%;
-	background-color: #FFF;
-	border: 1px solid #E7E7E7;
+}
+.coupon-wrapper .offer-description{
+	float: left;
+	width: 60%;
+	background: #FFF;
+	height: 45%;
+}
+.code-info{
+	height: 20%;
+	position: relative;
+	clear: both;
+}
+.code-info p{
+	width: 70%;
+	font-size: 14px;
+	font-weight: 300;
+	color: #000;
+	line-height: 20px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.code{
+	border: 3px dashed #E4E4E4;
+	background: #FFF;
+	color: #000;
+	margin-bottom: 10px;
+	cursor: default;
+}
+.close-btn{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+    display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.close-btn:before,
+.close-btn:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  display: block;
+  height: 4px;
+  width: 20px;
+  background-color: #fff;
+  transition: all 0.2s ease-out;
+}
+.close-btn:after {
+  transform: rotate(45deg);
+}
+.close-btn:hover:before {
+  transform: rotate(225deg);
+}
+.close-btn:hover:after {
+  transform: rotate(135deg);
+}
+@media only screen and (min-width: 500px){
+	.coupon-wrapper{
+		width: 600px;
+	}
+	.coupon-wrapper .offer-info{
+		height: 300px;
+	}
+	.coupon-wrapper .offer{
+		height: 300px;
+	}
+	.coupon-wrapper .button.code{
+		float: left;
+		margin-left: 10%;
+		width: 45%;
+	}
+	.coupon-wrapper .button{
+		margin-top: 15px;
+		width: 35%;
+	}
+}
+#categories-screen{
+	width: 100%;
+	height: 100%;
+	background: #F3F3F3;
+	position: fixed;
+	top: 0;
+	display: none;
+	overflow: scroll;
+
+}
+.categories-menu{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.categories-menu .container{
+	height: 150px;
+}
+.category-title, .select-category{
+	height: 50%;
+	position: relative;
+	color: #FFF;
+}
+.category-title h1{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+	font-size: 22px;
+	font-weight: 200;
+	text-align: center;
+}
+.select-category select{
+	font-size: 27px;
+	line-height: 46px;
+	text-align: center;
+	text-align-last:center;
+	text-align:-moz-center;
+    text-align:-webkit-center;
+	border: 2px solid;
 	border-radius: 10px;
+	width: 100%;
+	height: 50px;
+	background: inherit;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	position: relative;
+  	outline: none;
+}
+
+.select-category:before{
+	content: '';
+	position: absolute;
+    bottom: 40px;
+  	right: 40px;
+	display: block;
+	width: 0; 
+  	height: 0; 
+  	border-left: 10px solid transparent;
+ 	border-right: 10px solid transparent;
+  	border-top: 10px solid;
+  	transform: translateY(-30%);
+}
+.select-category option{
+	text-transform: capitalize;
+}
+.select-category span{
+	width: 0; 
+  	height: 0; 
+  	border-left: 10px solid transparent;
+ 	border-right: 10px solid transparent;
+  	border-top: 10px solid;
+  	transform: translateY(-30%);
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.categories-menu:before{
+	content: '';
+	position: absolute;
+    bottom: 0;
+  	left: 50%;
+	display: block;
+	height: 20px;
+	width: 20px;
+	background-color: inherit;
+	z-index: 1;
+	transform: translate(-50%,50%) rotate(45deg);
+}
+
+
+@media only screen and (min-width: 768px){
+	.categories-menu, .categories-menu .container{
+		height: 100px;
+	}
+	.categories-menu .container{
+		width: 80%;
+	}
+	.category-title,.select-category{
+		height: 100%;
+	}
+	.select-category select{
+		position: absolute;
+   		top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	.select-category:before{
+		right: 25px;
+	}
+	.category-title h1{
+		font-size: 26px;
+	}
 }
 
 

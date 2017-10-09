@@ -45,7 +45,7 @@
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "description": "60% zniżki na wszystko",
+      "description": "70% zniżki na wszystko",
       "coupon": true
     },
     {
@@ -53,7 +53,7 @@
       "category": "Moda&Styl",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "description": "60% zniżki na wszystko",
+      "description": "80% zniżki na wszystko",
       "coupon": true
     },
     {
@@ -69,7 +69,7 @@
       "category": "Elektronika",
       "img": "https://media.go2speed.org/brand/files/cubegroup/977/EURO_logo_1.gif",
       "name": "Empik",
-      "description": "60% zniżki na wszystko",
+      "description": "30% zniżki na wszystko",
       "coupon": false
     },
     {
@@ -117,16 +117,16 @@
       "category": "Inne",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
       "name": "Empik",
-      "description": "60% zniżki na wszystko",
-      "coupon": true
+      "description": "20% zniżki na wszystko",
+      "coupon": false
     },
     {
       "id": 16,
       "category": "Elektronika",
       "img": "https://media.go2speed.org/brand/files/cubegroup/162/logo_b.gif",
-      "name": "Empik",
+      "name": "RtvEuroAgd",
       "description": "Żniżka bardzo wysoka normalnie 69% na wszystkie ciekawe poradnik",
-      "coupon": false
+      "coupon": true
     },
     {
       "id": 17,
