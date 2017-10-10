@@ -1,0 +1,329 @@
+{
+    "Inne": [
+        {
+            "id": "705",
+            "nazwa": "10% zni\u017cki na kategori\u0119 Travel",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=484&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Ft.groupon.pl%2Fr%3FtsToken%3DPL_AFF_0_211389_1219695_0%26sid%3D%7Btransaction_id%7D%26url%3Dhttps%3A%2F%2Fwww.groupon.pl%2Fgetaways%3FCID%253DPL_AFF_5600_225_5383_1%2526z%253Dskip%2526utm_medium%253Dafl%2526utm_campaign%253D211389%2526mediaId%253D1219695%2526utm_source%253DGPN",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/484\/gro.jpg",
+            "name": "Groupon",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "TRAVEL10",
+            "kategoria_ho_id": "15",
+            "priorytet": "10"
+        },
+        {
+            "id": "176",
+            "nazwa": "5 tom serii \"Millennium\" (zapowied\u017a)",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=981&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fgo.salesmedia.pl%2Faff_c%3Foffer_id%3D981%26aff_id%3D%7Baffiliate_id%7D%26url_id%3D26761%26utm_source%3D%7Badvertiser_ref%7Dpp%26utm_medium%3D%7Badvertiser_ref%7Dcps%26utm_campaign%3D%7Badvertiser_ref%7DSalesMedia",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/981\/taniaksiazka.png",
+            "name": "TaniaKsiazka.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": "10"
+        },
+        {
+            "id": "707",
+            "nazwa": "Meble, kuchnie i dodatki taniej o VAT",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=914&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D233085%26a%3D2415505%26g%3D23975938%26Epi%3D%7Btransaction_id%7D%26Epi2%3D%7Baffiliate_id%7D%26url%3Dhttps%3A%2F%2Fwww.brw.com.pl%2F%3Futm_source%3D1035%26utm_medium%3Dafiliacja%26utm_campaign%3DPM-2017%26utm_term%3Dstarcom%26utm_content%3Ddisplay",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/914\/logo_brw576x576.jpg",
+            "name": "Black Red White",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        },
+        {
+            "id": "699",
+            "nazwa": "10 PLN dla nowych klient\u00f3w za zam\u00f3wienie powy\u017cej 40 PLN",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=37&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fgo.salesmedia.pl%2Faff_c%3Foffer_id%3D37%26aff_id%3D%7Baffiliate_id%7D%26url_id%3D29239%26clid%3DPL_AFF%26utm_source%3Dsalesmedia%26utm_medium%3Daffiliate%26utm_campaign%3Daff_%5Bgeneral%5D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/37\/pizzaportal.png",
+            "name": "Pizzaportal",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "AKKVUJGG",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        },
+        {
+            "id": "561",
+            "nazwa": "Kreator Stron WWW ju\u017c od 1,58 z\u0142 netto\/mies.",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=434&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fhome.pl%2Fstrony%3Fid%3D%7Baffiliate_id%7D%26creation_id%3D%7Btransaction_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/434\/logo.png",
+            "name": "home.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        },
+        {
+            "id": "560",
+            "nazwa": "HOSTING SMART (50 GB) \u2013 za jedyne 14,76 z\u0142 na rok!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=734&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Faz.pl%2Fhosting%2F%3Fpartner%3Dsm%26id%3D%7Baffiliate_id%7D%26creation_id%3D%7Btransaction_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/734\/AZ-logo.jpg",
+            "name": "AZ.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        },
+        {
+            "id": "559",
+            "nazwa": "7 domen .PL za 0 z\u0142 dla ka\u017cdego",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=734&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Faz.pl%2Fdomeny%2F%3Fpartner%3Dsm%26id%3D%7Baffiliate_id%7D%26creation_id%3D%7Btransaction_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/734\/AZ-logo.jpg",
+            "name": "AZ.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        },
+        {
+            "id": "558",
+            "nazwa": "Domena .online za 0 z\u0142 dla wszystkich ",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=734&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Faz.pl%2Fdomeny%2F%3Fpartner%3Dsm%26id%3D%7Baffiliate_id%7D%26creation_id%3D%7Btransaction_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/734\/AZ-logo.jpg",
+            "name": "AZ.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "15",
+            "priorytet": null
+        }
+    ],
+    "Elektronika": [
+        {
+            "id": "698",
+            "nazwa": "Do 50 korzystnych RAT. Wa\u017cne do 11.10. Sprawd\u017a szczeg\u00f3\u0142y!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=516&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fclk.tradedoubler.com%2Fclick%3Fp%3D229227%26a%3D2865441%26g%3D24041994%26p%3D229227%26a%3D2865441%26g%3D20885020%26epi%3D%7Btransaction_id%7D%26epi2%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/516\/mediamarktLogo.jpg",
+            "name": "MediaMarkt",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": "10"
+        },
+        {
+            "id": "272",
+            "nazwa": "Sprawd\u017a bestsellery Saturna!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=518&aff_id={affiliate_id}&source=panel&url=https%253A%252F%252Fclk.tradedoubler.com%252Fclick%253Fp%253D227536%2526a%253D2865441%2526g%253D23344260%2526epi%253D%257Btransaction_id%257D%2526epi2%253D%257Baffiliate_id%257D%2526url%253Dhttp%253A%252F%252Fclkuk.tradedoubler.com%252Fclick%253Fp%2528227536%2529a%25282865441%2529g%252820863354%2529url%2528https%253A%252F%252Fsaturn.pl%252Flp-lista%252F4473%2529%250D%250A",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/518\/saturn.png",
+            "name": "Saturn",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": "10"
+        },
+        {
+            "id": "271",
+            "nazwa": "Sprawd\u017a wyprzeda\u017ce dzia\u0142u Outlet w MediaMarkt!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=516&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fclkuk.tradedoubler.com%2Fclick%3Fp%28229227%29a%282865441%29g%2820885020%29url%28https%3A%2F%2Fmediamarkt.pl%2Foutlet%29%0D%0A%26p%3D229227%26a%3D2865441%26g%3D20885020%26epi%3D%7Btransaction_id%7D%26epi2%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/516\/mediamarktLogo.jpg",
+            "name": "MediaMarkt",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": "10"
+        },
+        {
+            "id": "270",
+            "nazwa": "Sprawd\u017a bestsellery z dzia\u0142u RTV i Telewizory!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=516&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fclkuk.tradedoubler.com%2Fclick%3Fp%28229227%29a%282865441%29g%2820885020%29url%28https%3A%2F%2Fmediamarkt.pl%2Frtv-i-telewizory%2Fbestsellery%29%0D%0A%26p%3D229227%26a%3D2865441%26g%3D20885020%26epi%3D%7Btransaction_id%7D%26epi2%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/516\/mediamarktLogo.jpg",
+            "name": "MediaMarkt",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": "10"
+        },
+        {
+            "id": "269",
+            "nazwa": "Sprawd\u017a komputerowe bestsellery MediaMarkt!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=516&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fclkuk.tradedoubler.com%2Fclick%3Fp%28229227%29a%282865441%29g%2820885020%29url%28https%3A%2F%2Fmediamarkt.pl%2Fkomputery-i-tablety%2Fbestsellery%29%0D%0A%26p%3D229227%26a%3D2865441%26g%3D20885020%26epi%3D%7Btransaction_id%7D%26epi2%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/516\/mediamarktLogo.jpg",
+            "name": "MediaMarkt",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": "10"
+        },
+        {
+            "id": "711",
+            "nazwa": "Rabat na ALLDOCUBE Freer X9 Tablet PC",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1421&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fwww.gearbest.com%2Ftablet-pcs%2Fpp_663824.html%3Futm_source%3Dsalesmedia%26utm_medium%3Ddisplay%26utm_campaign%3Dsalesmedia%26utm_term%3Dnormal",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1421\/100x66_gearbest logo.jpg",
+            "name": "Gearbest.com",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": null
+        },
+        {
+            "id": "710",
+            "nazwa": "16 USD rabatu na Teclast X80 Pro Tablet PC",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1421&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fwww.gearbest.com%2Ftablet-pcs%2Fpp_598248.html%3Futm_source%3Dsalesmedia%26utm_medium%3Ddisplay%26utm_campaign%3Dsalesmedia%26utm_term%3Dnormal",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1421\/100x66_gearbest logo.jpg",
+            "name": "Gearbest.com",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "X80Pro",
+            "kategoria_ho_id": "17",
+            "priorytet": null
+        },
+        {
+            "id": "709",
+            "nazwa": "60 USD rabatu na Xiaomi Mi Notebook Pro",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1421&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fwww.gearbest.com%2Flaptops%2Fpp_786412.html%3Futm_source%3Dsalesmedia%26utm_medium%3Ddisplay%26utm_campaign%3Dsalesmedia%26utm_term%3Dnormal",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1421\/100x66_gearbest logo.jpg",
+            "name": "Gearbest.com",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "17",
+            "priorytet": null
+        }
+    ],
+    "Kosmetyki": [
+        {
+            "id": "74",
+            "nazwa": "Darmowa wysy\u0142ka w Ekodrogerii",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1523&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fwww.ekodrogeria.pl%2F%3Futm_source%3Dsalesmedia%26utm_medium%3Ddisplay%26utm_campaign%3DCubeGroup%26utm_term%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1523\/eko.png",
+            "name": "Ekodrogeria",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "21",
+            "priorytet": null
+        },
+        {
+            "id": "73",
+            "nazwa": "Promocje w Neness",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1517&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fneness.pl%2Fproduct_advanced_searcher%2Fpromoted.html%3Futm_source%3DSalesMedia%26utm_medium%3Dafiliacja",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1517\/logo nen.png",
+            "name": "Perfumeria Neness\t\t\t",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "21",
+            "priorytet": null
+        },
+        {
+            "id": "71",
+            "nazwa": "Darmowa dostawa w Neness",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1517&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fneness.pl%2F%3Futm_source%3DSalesMedia%26utm_medium%3Dafiliacja",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1517\/logo nen.png",
+            "name": "Perfumeria Neness\t\t\t",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "21",
+            "priorytet": null
+        },
+        {
+            "id": "62",
+            "nazwa": "-10% przy do\u0142\u0105czeniu do newslettera w Neness",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1517&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fneness.pl%2F%3Futm_source%3DSalesMedia%26utm_medium%3Dafiliacja",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1517\/logo nen.png",
+            "name": "Perfumeria Neness\t\t\t",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "21",
+            "priorytet": null
+        },
+        {
+            "id": "36",
+            "nazwa": "Wyprzeda\u017c w Ekodrogerii",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1523&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fwww.ekodrogeria.pl%2F444-wyprzedaz%3Futm_source%3Dsalesmedia%26utm_medium%3Ddisplay%26utm_campaign%3DCubeGroup%26utm_term%3D%7Baffiliate_id%7D",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1523\/eko.png",
+            "name": "Ekodrogeria",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "21",
+            "priorytet": null
+        }
+    ],
+    "Moda i styl": [
+        {
+            "id": "706",
+            "nazwa": "OTULENIE SALE",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=777&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fwww.pakamera.pl%2Fsale-otulenie-0-sale514.htm%3Futm_source%3Dss%26utm_campaign%3Dafiliacja%26utm_medium%3Ddisplay%26utm_source%3Dss%26utm_campaign%3Dss%26utm_medium%3Ddisplay",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/777\/logo2.gif",
+            "name": "Pakamera.pl",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "691",
+            "nazwa": "Darmowa dostawa przy zakupach za min. 50 z\u0142",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1595&aff_id={affiliate_id}&source=panel&url=https%253A%252F%252Finistrack.net%252Fd%252Fck.php%253Fzoneid%253D193923%2526OXLCA%253D1%2526inisTrack%253D106214_b21452%2526subid%253D%257Btransaction_id%257D%2526dest%253Dhttp%253A%252F%252Favaro.pl%252F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1595\/logo_1_big.png",
+            "name": "Avaro CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "dd311017",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "690",
+            "nazwa": "20 z\u0142 rabatu za zakupy o min. Warto\u015bci 100 z\u0142. Kod obejmuje ca\u0142y asortyment",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1595&aff_id={affiliate_id}&source=panel&url=https%253A%252F%252Finistrack.net%252Fd%252Fck.php%253Fzoneid%253D193923%2526OXLCA%253D1%2526inisTrack%253D106214_b21452%2526subid%253D%257Btransaction_id%257D%2526dest%253Dhttp%253A%252F%252Favaro.pl%252F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1595\/logo_1_big.png",
+            "name": "Avaro CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "20pln311017",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "689",
+            "nazwa": "15 z\u0142 rabatu za zakupy o min. Warto\u015bci 100 z\u0142",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1593&aff_id={affiliate_id}&source=panel&url=http%253A%252F%252Finistrack.net%252Fd%252Fhtck.php%253Fzoneid%253D193909%2526OXLCA%253D1%2526inisTrack%253D106214_b20900%2526subid%253D%257Btransaction_id%257D%2526dest%253Dhttps%253A%252F%252Fwww.kontri.pl%252F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1593\/logo.gif",
+            "name": "Kontri CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "15pln311017",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "688",
+            "nazwa": "15% na wszystkie nieprzecenione rzeczy",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1593&aff_id={affiliate_id}&source=panel&url=http%253A%252F%252Finistrack.net%252Fd%252Fhtck.php%253Fzoneid%253D193909%2526OXLCA%253D1%2526inisTrack%253D106214_b20900%2526subid%253D%257Btransaction_id%257D%2526dest%253Dhttps%253A%252F%252Fwww.kontri.pl%252F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1593\/logo.gif",
+            "name": "Kontri CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "rabat311017",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "650",
+            "nazwa": "Lookbook jesie\u0144\/zima 2017 ju\u017c teraz!",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1501&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fwww.zaful.com%2F2017-autumn-and-winter-lookbook.html%3Futm%3Dsalesmedia",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1501\/logo zaful.jpg",
+            "name": "ZAFUL",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "487",
+            "nazwa": "Kod rabatowy 20 z\u0142 na wszystko w Markoweobuwie! ",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1599&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fmarkoweobuwie.com.pl%2F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1599\/logo.jpg",
+            "name": "Markoweobuwie.com.pl CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "RABAT20",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        },
+        {
+            "id": "486",
+            "nazwa": "Kod rabatowy 300 z\u0142 na wszystko w Markoweobuwie! ",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1599&aff_id={affiliate_id}&source=panel&url=https%3A%2F%2Fmarkoweobuwie.com.pl%2F",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1599\/logo.jpg",
+            "name": "Markoweobuwie.com.pl CPS",
+            "typ": "1",
+            "tresc_kodu_rabatowego": "RABAT300",
+            "kategoria_ho_id": "25",
+            "priorytet": null
+        }
+    ]
+}

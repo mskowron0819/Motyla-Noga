@@ -35,14 +35,16 @@ var offers = $("#main-screen-content .offers");
 var categoryOffers = $('#categories-screen .offers');
 var categoriesFrame = $('#categories-screen');
 var couponFrame = $('#coupon-screen');
-var offersData = 'http://localhost:3000/offers';
+var offersData = 'db/offers_c.json';
 var categoriesMenu = $('.categories-menu');
 var menuWrapper = $('.categories-menu .container');
 
 	function getOffers() {
         $.ajax({
+            dataType: 'json',
             url: offersData
         }).done(function(data) {
+            console.log(data);
             loadOffers(data);
         }).fail(function(error) {
             console.log(error);
@@ -52,11 +54,12 @@ var menuWrapper = $('.categories-menu .container');
     // Main screen content
     function loadOffers(response) {
 		var categories = [];
+                return;
 		$(response).each(function(index, value) {
 		    if ($.inArray(value.category,categories)==-1) {
 		    	categories.push(value.category);
             	var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
-            	var offerCategory = $(`<div class="offer">`).text(value.category.toUpperCase());
+            	var offerCategory = $('<div class="offer">').text(value.category.toUpperCase());
             	var offerInfo = $('<div class="offer-info">');
             	var offerLogo = $('<div class="offer-logo">');
             	var logo = $('<img class="logo">').attr('src',value.img);
