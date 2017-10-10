@@ -1,9 +1,5 @@
 <?php
-define('URL_API', 'https://api.cubegroup.pl/admin/index');
-define('USERNAME', '335197627954c2bdc55fddb6858616fb');
-define('TOKEN', '8usg6e_q52EpzV5ES2ndjQu9F6A6zqCC');
-define('CACHEFILEPATH', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR.'db'.DIRECTORY_SEPARATOR.'offers_cache.txt');
-define('JSONFILEPATH', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR.'db'.DIRECTORY_SEPARATOR.'offers_c.json');
+require 'config.php';
 
 function getCategories() {
     $categories = [];
