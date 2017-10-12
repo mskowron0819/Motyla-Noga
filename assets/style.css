@@ -12,6 +12,9 @@ header{
 img{
 	width: 100%;
 }
+#main-screen-content{
+	margin-top: -80px;
+}
 .container{
 	width: 90%;
 	padding: 0;
@@ -60,6 +63,9 @@ img{
 	width: 100%;
 	line-height: 25px;
 	font-size: 16px;
+}
+.offer-description span{
+	font-size: 30px;
 }
 .description{
 	width: 90%;
@@ -141,7 +147,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.code{
+.offer-info .button.code{
 	border: 3px dashed #E4E4E4;
 	background: #FFF;
 	color: #000;
@@ -198,6 +204,9 @@ img{
 	.coupon-wrapper .button{
 		margin-top: 15px;
 		width: 35%;
+	}
+	#main-screen-content{
+		margin-top: -100px;
 	}
 }
 #categories-screen{
@@ -318,7 +327,54 @@ img{
 		font-size: 26px;
 	}
 }
-
+.moda, .moda .button{
+	background-color: #3CB9D9;
+}
+.dzieci, .dzieci .button {
+	background-color: #68E0D6;
+}
+.kosmetyki, .kosmetyki .button {
+	background-color: #CFA4EB;
+}
+.rozrywka, .rozrywka .button {
+	background-color: #454F94;
+}
+.elektronika, .elektronika .button {
+	background-color: #9DA79E;
+}
+.podroze, .podroze .button {
+	background-color: #85C169;
+}
+.sport, .sport .button{
+	background-color: #FE6987;
+}
+.inne, .inne .button{
+	background-color: #CFCB9B;
+	} 
+.moda .description span{
+	color: #3CB9D9;
+}
+.dzieci .description span{
+	color: #68E0D6;
+}
+.kosmetyki .description span{
+	color: #CFA4EB;
+}
+.rozrywka .description span{
+	color: #454F94;
+}
+.elektronika .description span{
+	color: #9DA79E;
+}
+.podroze .description span{
+	color: #85C169;
+}
+.sport.description span{
+	color: #FE6987;
+}
+.inne .description span{
+	color: #CFCB9B;
+	} 	
 
 
 

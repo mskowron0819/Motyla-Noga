@@ -1,43 +1,24 @@
 $( document ).ready(function() {
-
+// image change
+	var imgSrc = $('#bg');
 	var mq = window.matchMedia("(min-width: 500px)");
-    if(matchMedia) {
-  		mq.addListener(WidthChange);
-  		WidthChange(mq);
-	}
-	
-	// media query change
-	function WidthChange(mq) {
-		var imgSrc = $('#bg');
-		var offersPosition = $('#main-screen-content');	
+	function widthChange(mq) {
 	  if (mq.matches) {
 	    imgSrc.attr('src','assets/img/LP.png');
-	    offersPosition.css( "margin-top", "-100px" );
 	  } else {
 	    imgSrc.attr('src','assets/img/LP_mobile.png');
-	    offersPosition.css( "margin-top", "-80px" );
 	  }
-
 	}
+	widthChange(mq)
+	mq.addListener(widthChange);
 
-//  colors of the categories
-
-var moda = '#3CB9D9';
-var dzieci = '#68E0D6';
-var kosmetyki = '#CFA4EB';
-var rozrywka = '#454F94';
-var elektronika = '#9DA79E';
-var podroze = '#85C169';
-var sport = '#FE6987';
-var inne = '#CFCB9B';
-
-var offers = $("#main-screen-content .offers");
-var categoryOffers = $('#categories-screen .offers');
-var categoriesFrame = $('#categories-screen');
-var couponFrame = $('#coupon-screen');
-var offersData = 'db/offers_c.json';
-var categoriesMenu = $('.categories-menu');
-var menuWrapper = $('.categories-menu .container');
+	var offers = $("#main-screen-content .offers");
+	var categoryOffers = $('#categories-screen .offers');
+	var categoriesFrame = $('#categories-screen');
+	var couponFrame = $('#coupon-screen');
+	var offersData = 'db/offers_c.json';
+	var categoriesMenu = $('.categories-menu');
+	var menuWrapper = $('.categories-menu .container');
 
 	function getOffers() {
         $.ajax({
@@ -53,236 +34,243 @@ var menuWrapper = $('.categories-menu .container');
 
     // Main screen content
     function loadOffers(response) {
-		var categories = [];
-                return;
-		$(response).each(function(index, value) {
-		    if ($.inArray(value.category,categories)==-1) {
-		    	categories.push(value.category);
-            	var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
-            	var offerCategory = $('<div class="offer">').text(value.category.toUpperCase());
-            	var offerInfo = $('<div class="offer-info">');
-            	var offerLogo = $('<div class="offer-logo">');
-            	var logo = $('<img class="logo">').attr('src',value.img);
-            	var description = value.description.replace(/[-?0-9+(%)]/g,function(a){
+    	var tab = Object.keys(response);
+		$.map( response, function( value, key ) {
+			value.sort(function(a,b) {return (b.priorytet > a.priorytet) ? 1 : ((a.priorytet > b.priorytet) ? -1 : 0);}); 
+		    var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
+            var offerCategory = $('<div class="offer">').text(key);
+           	var logo = $('<img class="logo">');
+           	var offerInfo = $('<div class="offer-info">');
+           	var offerLogo = $('<div class="offer-logo">');
+           	var offerDescription = $('<div class="offer-description">');
+           	var offerBtn = $('<div class="button">').text('SPRAWDŹ');
+           	var showMore = $('<div class="show-more">').text('Zobacz więcej promocji');      	
+            var description = value[0].nazwa.replace(/[-?0-9+(%)]/g,function(a){
   										  return '<span>' + a + '</span>'});
-            	var offerDescription = $('<div class="offer-description">').html(`<div class='description'>${description}</div>`);
-            	offerDescription.find('span').css('font-size','30px');
-            	var offerBtn = $('<div class="button">').text('SPRAWDŹ');
-            	var showMore = $('<div class="show-more">').text('Zobacz więcej promocji');
-            	if(offerCategory.text() =='MODA&STYL') {
-					offerCategory.css('background-color',moda);
-					offerBtn.css('background-color',moda);
-					offerDescription.find('span').css('color',moda);
-				}else if(offerCategory.text() =='PODRÓŻE'){
-					offerCategory.css('background-color', podroze);
-					offerBtn.css('background-color', podroze);
-					offerDescription.find('span').css('color',podroze);
-				}else if(offerCategory.text() =='ROZRYWKA'){
-					offerCategory.css('background-color',rozrywka)
-					offerBtn.css('background-color',rozrywka)
-					offerDescription.find('span').css('color',rozrywka);
-				}else if(offerCategory.text() =='SPORT I HOBBY'){
-					offerCategory.css('background-color', sport)
-					offerBtn.css('background-color', sport)
-					offerDescription.find('span').css('color',sport);
-				}else if(offerCategory.text() =='ELEKTRONIKA'){
-					offerCategory.css('background-color', elektronika)
-					offerBtn.css('background-color', elektronika)
-					offerDescription.find('span').css('color',elektronika);
-				}else if(offerCategory.text() =='INNE'){
-					offerCategory.css('background-color',inne)
-					offerBtn.css('background-color',inne)
-					offerDescription.find('span').css('color',inne);
-				}else if(offerCategory.text() =='DLA DZIECI'){
-					offerCategory.css('background-color',dzieci);
-					offerBtn.css('background-color',dzieci);
-					offerDescription.find('span').css('color',dzieci);
-				}else if(offerCategory.text() =='KOSMETYKI'){
-					offerCategory.css('background-color',kosmetyki)
-					offerBtn.css('background-color',kosmetyki)
-					offerDescription.find('span').css('color',kosmetyki);
-				}
-				showMore.click(function(){
-					loadCategories(response,value.category);
-				});
-				offerBtn.click(function () {
-					var couponWrapper = offerWrapper.clone();
-					couponFrame.append(couponWrapper);
-					couponWrapper.addClass('coupon-wrapper');
-					var couponBtn = $('.coupon-wrapper .button');
-					couponBtn.text('IDŹ DO SKLEPU >>');
-					$('.coupon-wrapper .show-more').remove();
-					var codeInfo = $('<div class="code-info">');
-					var code = $('<div class="button code">').text(value.coupon);
-					couponBtn.before(codeInfo);
+            offerDescription.html(`<div class='description'>${description}</div>`);
+		    logo.attr('src',value[0].thumbnail_preview_uri);
+		    function getImgSize(imgSrc){
+						    var newImg = new Image();
+						    newImg.src = imgSrc;
+						    var height = newImg.height;
+						    p = $(newImg).ready(function(){
+						        return {width: newImg.width, height: newImg.height};
+						    });
+						    if(p[0]['height']>220&&p[0]['width']>170){
+						    	logo.css('width','25%');
+						    }
+						};
+			getImgSize(value[0].thumbnail_preview_uri);
+		    switch(value[0].kategoria_ho_id){
+			    case "15": {
+			    	offerCategory.addClass('inne');
+					break;}
+			    case "17": {
+			   	    offerCategory.addClass('elektronika');
+			        break;}
+			    case "21": {
+			        offerCategory.addClass('kosmetyki');
+			        break;}
+			    case "25": {
+			        offerCategory.addClass('moda');
+			        break;}
+			    case "#": {
+			        offerCategory.addClass('dzieci');
+			        break;}
+			    case "#": {
+			        offerCategory.addClass('rozrywka');
+			        break;}
+			    case "#": {
+			        offerCategory.addClass('podroze');
+			        break;}
+			    case "#": {
+			        offerCategory.addClass('sport');
+			        break;}
+				}	
 
-					if(value.coupon === true){
-						codeInfo.append(`<p>Skopiuj poniższy kod rabatowy i wklej go na <a>${value.name}</a>`);
-						couponBtn.before(code);
-						if (mq.matches) {
-						    couponBtn.css('float', 'left');
-						}
-					}else{
-						codeInfo.append('<p>Promocja nie wymaga kodu rabatowego!</p>');
-						if (!mq.matches) {
-						    couponBtn.css('margin-top', '30px');
-						}
+		    offerBtn.click(function() {
+				var couponWrapper = offerWrapper.clone();
+				couponFrame.append(couponWrapper);
+				couponWrapper.addClass('coupon-wrapper');
+				var couponBtn = $('.coupon-wrapper .button');
+				couponBtn.text('IDŹ DO SKLEPU >>');
+				$('.coupon-wrapper .show-more').remove();
+				var codeInfo = $('<div class="code-info">');
+				var code = $('<div class="button code">');
+				couponBtn.before(codeInfo);
+
+				if(value[0].typ == "1"){
+					codeInfo.append('<p>Skopiuj poniższy kod rabatowy i wklej go na stronie sklepu</p>');
+					code.text(value[0].tresc_kodu_rabatowego);
+					couponBtn.before(code);
+					if (mq.matches) {
+					    couponBtn.css('float', 'left');
 					}
+				}else if (value[0].typ == "2"){
+					codeInfo.append('<p>Promocja nie wymaga kodu rabatowego!</p>');
+					if (!mq.matches) {
+					    couponBtn.css('margin-top', '30px');
+					}
+				}
 
-					couponBtn.click(function() {
-						window.open(value.img);
-					});
-
-					var closeBtn = $('<div class="close-btn">');
-					couponBtn.after(closeBtn);
-					closeBtn.click(function() {
-						couponFrame.hide();
-						couponWrapper.hide();
-						
-					});
-					couponFrame.show();
+				couponBtn.click(function() {
+					window.open(value[0].link_wygenerowany);
 				});
-	            offerWrapper.append(offerCategory);
-	            offerCategory.append(offerInfo);
-	            offerLogo.append(logo);
-	            offerInfo.append(offerLogo,offerDescription,offerBtn,showMore);
-	            offers.append(offerWrapper);
-		    };
-		});
-	}
-	function loadCategories(response,category,couponHandler) {
+
+				var closeBtn = $('<div class="close-btn">');
+				couponBtn.after(closeBtn);
+
+				closeBtn.click(function() {
+					couponFrame.hide();
+					couponWrapper.hide();						
+				});
+				couponFrame.show();
+			});
+
+			showMore.click(function(){
+				loadCategories(response,key,tab);
+			}); 	
+            offerWrapper.append(offerCategory);
+	        offerCategory.append(offerInfo);
+	        offerLogo.append(logo);
+	        offerInfo.append(offerLogo,offerDescription,offerBtn,showMore);
+	        offers.append(offerWrapper);
+	    });
+	};
+	function loadCategories(response,key,tab){
 		categoriesFrame.show();
 		var title = $('<h1>').text('Złap jeszcze więcej super promocji z kategorii ');
 		var menuTitle = $('<div class="category-title col-xs-12 col-sm-8">').append(title);
-		
 		var selectCategory = $('<div class="select-category col-xs-12 col-sm-4">');
 		var categoriesDropdown = $('<select class="dropdown">');
-		var categories = response.map(function(a) {return a.category;});
-		// console.log(categories);
-		var uniqueCategories = categories.filter(function(item, pos){return categories.indexOf(item)== pos; });
-		uniqueCategories.map(function(a) {
+		tab.map(function(a) {
 			var categorySelected = $(`<option>`);
 			categoriesDropdown.append(categorySelected.text(a));
-			if(categorySelected.val() == category){
+			if(categorySelected.val() == key){
 				categorySelected.attr("selected","selected");				
 			}
 			return categoriesDropdown;
 		});
-		
 		categoriesDropdown.change(function(){
-			category = categoriesDropdown.val();
+			key = categoriesDropdown.val();
 			categoryOffers.empty();
+			categoriesMenu.removeAttr("class");
 			showOffers();
+			categoriesMenu.addClass('categories-menu');
 		});
 		selectCategory.append(categoriesDropdown);
 		menuWrapper.append(menuTitle,selectCategory);
 		categoriesMenu.append(menuWrapper);
-		
-	function showOffers(){
-		$(response).each(function(index, value) {
-			
-			if(value.category == category)  {
 
-				var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
-            	var offerCategory = $(`<div class="offer">`).text(value.category.toUpperCase());
-            	var offerInfo = $('<div class="offer-info">');
-            	var offerLogo = $('<div class="offer-logo">');
-            	var logo = $('<img class="logo">').attr('src',value.img);
-            	var description = value.description.replace(/[-?0-9+(%)]/g,function(a){
-  										  return '<span>' + a + '</span>'});
-            	var offerDescription = $('<div class="offer-description">').html(`<div class='description'>${description}</div>`);
-            	offerDescription.find('span').css('font-size','30px');
-            	var offerBtn = $('<div class="button">').text('SPRAWDŹ');
-            	if(offerCategory.text() =='MODA&STYL') {
-					offerCategory.css('background-color',moda);
-					offerBtn.css('background-color',moda);
-					offerDescription.find('span').css('color',moda);
-					categoriesMenu.css('background-color',moda);
-				}else if(offerCategory.text() =='PODRÓŻE'){
-					offerCategory.css('background-color', podroze);
-					offerBtn.css('background-color', podroze);
-					offerDescription.find('span').css('color',podroze);
-					categoriesMenu.css('background-color',podroze);
-				}else if(offerCategory.text() =='ROZRYWKA'){
-					offerCategory.css('background-color',rozrywka)
-					offerBtn.css('background-color',rozrywka)
-					offerDescription.find('span').css('color',rozrywka);
-					categoriesMenu.css('background-color',rozrywka);
-				}else if(offerCategory.text() =='SPORT I HOBBY'){
-					offerCategory.css('background-color', sport)
-					offerBtn.css('background-color', sport)
-					offerDescription.find('span').css('color',sport);
-					categoriesMenu.css('background-color',sport);
-				}else if(offerCategory.text() =='ELEKTRONIKA'){
-					offerCategory.css('background-color', elektronika)
-					offerBtn.css('background-color', elektronika)
-					offerDescription.find('span').css('color',elektronika);
-					categoriesMenu.css('background-color',elektronika);
-				}else if(offerCategory.text() =='INNE'){
-					offerCategory.css('background-color',inne)
-					offerBtn.css('background-color',inne)
-					offerDescription.find('span').css('color',inne);
-					categoriesMenu.css('background-color',inne);
-				}else if(offerCategory.text() =='DLA DZIECI'){
-					offerCategory.css('background-color',dzieci);
-					offerBtn.css('background-color',dzieci);
-					offerDescription.find('span').css('color',dzieci);
-					categoriesMenu.css('background-color',dzieci);
-				}else if(offerCategory.text() =='KOSMETYKI'){
-					offerCategory.css('background-color',kosmetyki)
-					offerBtn.css('background-color',kosmetyki)
-					offerDescription.find('span').css('color',kosmetyki);
-					categoriesMenu.css('background-color',kosmetyki);
-				}
-				offerWrapper.append(offerCategory);
-	            offerCategory.append(offerInfo);
-	            offerLogo.append(logo);
-	            offerInfo.append(offerLogo,offerDescription,offerBtn);
-	            categoryOffers.append(offerWrapper);
+		function showOffers(){
+			$.map(response, function(val,i){
+				if(key==i){
+					$(val).each(function(index, item){
+						var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
+				        var offerCategory = $(`<div class="offer">`).text(key.toUpperCase());
+				        var offerInfo = $('<div class="offer-info">');
+				        var offerLogo = $('<div class="offer-logo">');
+				        var logo = $('<img class="logo">').attr('src',item.thumbnail_preview_uri);
+				        var description = item.nazwa.replace(/[-?0-9+(%)]/g,function(a){
+  							return '<span>' + a + '</span>'});
+				        var offerDescription = $('<div class="offer-description">').html(`<div class='description'>${description}</div>`);
+				        offerDescription.find('span').css('font-size','30px');
+				        var offerBtn = $('<div class="button">').text('SPRAWDŹ');
+				        function getImgSize(imgSrc){
+						    var newImg = new Image();
+						    newImg.src = imgSrc;
+						    var height = newImg.height;
+						    p = $(newImg).ready(function(){
+						        return {width: newImg.width, height: newImg.height};
+						    });
+						    if(p[0]['height']>220&&p[0]['width']>170){
+						    	logo.css('width','25%');
+						    }
+						};
+						getImgSize(item.thumbnail_preview_uri);
+				        switch(item.kategoria_ho_id){
+							case "15": {
+								categoriesMenu.addClass('inne');
+							   	offerCategory.addClass('inne');
+								break;}
+							case "17": {
+							   	categoriesMenu.addClass('elektronika');
+							   	offerCategory.addClass('elektronika');
+							   	break;}
+							case "21": {
+							    categoriesMenu.addClass('kosmetyki');
+							    offerCategory.addClass('kosmetyki');
+							    break;}
+							case "25": {
+							    categoriesMenu.addClass('moda');
+							    offerCategory.addClass('moda');
+							    break;}
+							case "#": {
+							    categoriesMenu.addClass('dzieci');
+							    offerCategory.addClass('dzieci');
+							    break;}
+							case "#": {
+							    categoriesMenu.addClass('rozrywka');
+							    offerCategory.addClass('rozrywka');
+							    break;}
+							case "#": {
+							    categoriesMenu.addClass('podroze');
+							    offerCategory.addClass('podroze');
+							    break;}
+							case "#": {
+							    categoriesMenu.addClass('sport');
+							    offerCategory.addClass('sport');
+							    break;}
+						}	
+						offerWrapper.append(offerCategory);
+					    offerCategory.append(offerInfo);
+					    offerLogo.append(logo);
+					    offerInfo.append(offerLogo,offerDescription,offerBtn);
+					    categoryOffers.append(offerWrapper);
 	            
-	            offerBtn.click(function () {
-	            	var couponWrapper = offerWrapper.clone();
-					couponFrame.show().css('z-index', '1');
-					couponFrame.append(couponWrapper);
-					couponWrapper.addClass('coupon-wrapper');
-					var couponBtn = $('.coupon-wrapper .button');
-					couponBtn.text('IDŹ DO SKLEPU >>');
-					$('.coupon-wrapper .show-more').remove();
-					var codeInfo = $('<div class="code-info">');
-					var code = $('<div class="button code">').text(value.coupon);
-					couponBtn.before(codeInfo);
+					    offerBtn.click(function () {
+					        var couponWrapper = offerWrapper.clone();
+							couponFrame.show().css('z-index', '1');
+							couponFrame.append(couponWrapper);
+							couponWrapper.addClass('coupon-wrapper');
+							var couponBtn = $('.coupon-wrapper .button');
+							couponBtn.text('IDŹ DO SKLEPU >>');
+							$('.coupon-wrapper .show-more').remove();
+							var codeInfo = $('<div class="code-info">');
+							var code = $('<div class="button code">').text(item.tresc_kodu_rabatowego);
+							couponBtn.before(codeInfo);
 
-					if(value.coupon === true){
-						codeInfo.append(`<p>Skopiuj poniższy kod rabatowy i wklej go na <a>${value.name}</a>`);
-						couponBtn.before(code);
-						if (mq.matches) {
-						    couponBtn.css('float', 'left');
-						}
-					}else{
-						codeInfo.append('<p>Promocja nie wymaga kodu rabatowego!</p>');
-						if (!mq.matches) {
-						    couponBtn.css('margin-top', '30px');
-						}
-					}
+							if(item.typ == "1"){
+								codeInfo.append('<p>Skopiuj poniższy kod rabatowy i wklej go na stronie sklepu</p>');
+								couponBtn.before(code);
+								if (mq.matches) {
+										  couponBtn.css('float', 'left');
+								}
+							}else if(item.typ == "2"){
+								codeInfo.append('<p>Promocja nie wymaga kodu rabatowego!</p>');
+								if (!mq.matches) {
+										  couponBtn.css('margin-top', '30px');
+								}
+							}
 
-					couponBtn.click(function() {
-						window.open(value.img);
-					});
+							couponBtn.click(function() {
+								window.open(item.link_wygenerowany);
+							});
 
-					var closeBtn = $('<div class="close-btn">');
-					couponBtn.after(closeBtn);
-					closeBtn.click(function() {
-						couponFrame.hide();
-						couponWrapper.hide();
-						
-					});
-				});
-			}
-			
-		});
+							var closeBtn = $('<div class="close-btn">');
+							couponBtn.after(closeBtn);
+							closeBtn.click(function() {
+								couponFrame.hide();
+								couponWrapper.hide();
+										
+							});
+						});
+	        		});
+				}
+			});
+		}
+		showOffers();		
 	}
-	showOffers();
-	};
     getOffers();
     
 });
