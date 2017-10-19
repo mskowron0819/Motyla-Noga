@@ -24,8 +24,7 @@ $( document ).ready(function() {
         $.ajax({
             dataType: 'json',
             url: offersData
-        }).done(function(data) {
-            console.log(data);
+        }).done(function(data) {;
             loadOffers(data);
         }).fail(function(error) {
             console.log(error);
@@ -39,28 +38,15 @@ $( document ).ready(function() {
 			value.sort(function(a,b) {return (b.priorytet > a.priorytet) ? 1 : ((a.priorytet > b.priorytet) ? -1 : 0);}); 
 		    var offerWrapper = $('<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">');
             var offerCategory = $('<div class="offer">').text(key);
-           	var logo = $('<img class="logo">');
            	var offerInfo = $('<div class="offer-info">');
            	var offerLogo = $('<div class="offer-logo">');
+           	offerLogo.css('background-image',`url("${value[0].thumbnail_preview_uri}")`);
            	var offerDescription = $('<div class="offer-description">');
            	var offerBtn = $('<div class="button">').text('SPRAWDŹ');
            	var showMore = $('<div class="show-more">').text('Zobacz więcej promocji');      	
             var description = value[0].nazwa.replace(/[-?0-9+(%)]/g,function(a){
   										  return '<span>' + a + '</span>'});
             offerDescription.html(`<div class='description'>${description}</div>`);
-		    logo.attr('src',value[0].thumbnail_preview_uri);
-		    function getImgSize(imgSrc){
-						    var newImg = new Image();
-						    newImg.src = imgSrc;
-						    var height = newImg.height;
-						    p = $(newImg).ready(function(){
-						        return {width: newImg.width, height: newImg.height};
-						    });
-						    if(p[0]['height']>220&&p[0]['width']>170){
-						    	logo.css('width','25%');
-						    }
-						};
-			getImgSize(value[0].thumbnail_preview_uri);
 		    switch(value[0].kategoria_ho_id){
 			    case "15": {
 			    	offerCategory.addClass('inne');
@@ -86,7 +72,7 @@ $( document ).ready(function() {
 			    case "#": {
 			        offerCategory.addClass('sport');
 			        break;}
-				}	
+			}	
 
 		    offerBtn.click(function() {
 				var couponWrapper = offerWrapper.clone();
@@ -132,7 +118,6 @@ $( document ).ready(function() {
 			}); 	
             offerWrapper.append(offerCategory);
 	        offerCategory.append(offerInfo);
-	        offerLogo.append(logo);
 	        offerInfo.append(offerLogo,offerDescription,offerBtn,showMore);
 	        offers.append(offerWrapper);
 	    });
@@ -170,24 +155,12 @@ $( document ).ready(function() {
 				        var offerCategory = $(`<div class="offer">`).text(key.toUpperCase());
 				        var offerInfo = $('<div class="offer-info">');
 				        var offerLogo = $('<div class="offer-logo">');
-				        var logo = $('<img class="logo">').attr('src',item.thumbnail_preview_uri);
+				        offerLogo.css('background-image',`url("${item.thumbnail_preview_uri}")`);
 				        var description = item.nazwa.replace(/[-?0-9+(%)]/g,function(a){
   							return '<span>' + a + '</span>'});
 				        var offerDescription = $('<div class="offer-description">').html(`<div class='description'>${description}</div>`);
 				        offerDescription.find('span').css('font-size','30px');
 				        var offerBtn = $('<div class="button">').text('SPRAWDŹ');
-				        function getImgSize(imgSrc){
-						    var newImg = new Image();
-						    newImg.src = imgSrc;
-						    var height = newImg.height;
-						    p = $(newImg).ready(function(){
-						        return {width: newImg.width, height: newImg.height};
-						    });
-						    if(p[0]['height']>220&&p[0]['width']>170){
-						    	logo.css('width','25%');
-						    }
-						};
-						getImgSize(item.thumbnail_preview_uri);
 				        switch(item.kategoria_ho_id){
 							case "15": {
 								categoriesMenu.addClass('inne');
@@ -224,7 +197,6 @@ $( document ).ready(function() {
 						}	
 						offerWrapper.append(offerCategory);
 					    offerCategory.append(offerInfo);
-					    offerLogo.append(logo);
 					    offerInfo.append(offerLogo,offerDescription,offerBtn);
 					    categoryOffers.append(offerWrapper);
 	            

@@ -44,15 +44,11 @@ img{
 .offer-logo{
 	height: 90px;
 	position: relative;
-	width: 280px;
-	overflow: hidden;
-}
-.logo{
-	width: 70%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	width: 150px;
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 .offer-description{
 	background: url(img/dots-horizontal.png) right top repeat-x;
