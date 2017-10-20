@@ -40,7 +40,8 @@ $( document ).ready(function() {
             var offerCategory = $('<div class="offer">').text(key);
            	var offerInfo = $('<div class="offer-info">');
            	var offerLogo = $('<div class="offer-logo">');
-           	offerLogo.css('background-image',`url("${value[0].thumbnail_preview_uri}")`);
+           	var logo = $('<div class="logo">');
+           	logo.css('background',`#FFF url("${value[0].thumbnail_preview_uri}") no-repeat center/contain`);
            	var offerDescription = $('<div class="offer-description">');
            	var offerBtn = $('<div class="button">').text('SPRAWDŹ');
            	var showMore = $('<div class="show-more">').text('Zobacz więcej promocji');      	
@@ -115,7 +116,8 @@ $( document ).ready(function() {
 
 			showMore.click(function(){
 				loadCategories(response,key,tab);
-			}); 	
+			}); 
+			offerLogo.append(logo);	
             offerWrapper.append(offerCategory);
 	        offerCategory.append(offerInfo);
 	        offerInfo.append(offerLogo,offerDescription,offerBtn,showMore);
@@ -155,7 +157,8 @@ $( document ).ready(function() {
 				        var offerCategory = $(`<div class="offer">`).text(key.toUpperCase());
 				        var offerInfo = $('<div class="offer-info">');
 				        var offerLogo = $('<div class="offer-logo">');
-				        offerLogo.css('background-image',`url("${item.thumbnail_preview_uri}")`);
+				        var logo = $('<div class="logo">');
+				        logo.css('background',`url("${item.thumbnail_preview_uri}") no-repeat center/contain`);
 				        var description = item.nazwa.replace(/[-?0-9+(%)]/g,function(a){
   							return '<span>' + a + '</span>'});
 				        var offerDescription = $('<div class="offer-description">').html(`<div class='description'>${description}</div>`);
@@ -195,6 +198,7 @@ $( document ).ready(function() {
 							    offerCategory.addClass('sport');
 							    break;}
 						}	
+						offerLogo.append(logo);
 						offerWrapper.append(offerCategory);
 					    offerCategory.append(offerInfo);
 					    offerInfo.append(offerLogo,offerDescription,offerBtn);
