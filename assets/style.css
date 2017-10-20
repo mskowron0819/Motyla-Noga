@@ -44,15 +44,14 @@ img{
 .offer-logo{
 	height: 90px;
 	position: relative;
-	width: 280px;
-	overflow: hidden;
+	width: 150px;
+	margin: 0 auto;
+	background-color: #FFF;
+	padding: 5px 0 !important;
 }
-.logo{
-	width: 70%;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.offer-logo .logo{
+	height: 100%;
+	width: 100%;
 }
 .offer-description{
 	background: url(img/dots-horizontal.png) right top repeat-x;
@@ -120,10 +119,11 @@ img{
 	width: 40%;
 	float: left;
 	height: 45%;
-	background: #FFF;
 }
-.coupon-wrapper .logo{
+.coupon-wrapper .logo {
 	width: 90%;
+	height: 100%;
+	margin-left: 10%;
 }
 .coupon-wrapper .offer-description{
 	float: left;
