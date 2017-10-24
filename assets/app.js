@@ -129,22 +129,31 @@ $( document ).ready(function() {
 		var title = $('<h1>').text('Złap jeszcze więcej super promocji z kategorii ');
 		var menuTitle = $('<div class="category-title col-xs-12 col-sm-8">').append(title);
 		var selectCategory = $('<div class="select-category col-xs-12 col-sm-4">');
-		var categoriesDropdown = $('<select class="dropdown">');
+		var categoriesDropdown = $('<ul id="dropdown">');
+		var select = $('<li id="selected">');
+		select.prependTo(categoriesDropdown);
 		tab.map(function(a) {
-			var categorySelected = $(`<option>`);
+			var categorySelected = $('<li>');
 			categoriesDropdown.append(categorySelected.text(a));
-			if(categorySelected.val() == key){
-				categorySelected.attr("selected","selected");				
+			if(categorySelected.text() == key){
+				select.text(categorySelected.text()).append('<span>');			
 			}
-			return categoriesDropdown;
 		});
-		categoriesDropdown.change(function(){
-			key = categoriesDropdown.val();
-			categoryOffers.empty();
-			categoriesMenu.removeAttr("class");
-			showOffers();
-			categoriesMenu.addClass('categories-menu');
+		categoriesDropdown.click(function(e){
+			if (categoriesDropdown.hasClass("active")) {
+				select.text(e.target.innerHTML).append('<span>');
+				key = select.text();
+				categoryOffers.empty();
+				categoriesMenu.removeAttr("class");
+				categoriesMenu.addClass('categories-menu');
+				showOffers();
+				categoriesDropdown.removeClass();
+			} 
+			else {
+				categoriesDropdown.addClass(`${categoriesMenu.attr('class')} active`).removeClass('categories-menu');
+			}
 		});
+
 		selectCategory.append(categoriesDropdown);
 		menuWrapper.append(menuTitle,selectCategory);
 		categoriesMenu.append(menuWrapper);
@@ -166,38 +175,31 @@ $( document ).ready(function() {
 				        var offerBtn = $('<div class="button">').text('SPRAWDŹ');
 				        switch(item.kategoria_ho_id){
 							case "15": {
-								categoriesMenu.addClass('inne');
 							   	offerCategory.addClass('inne');
 								break;}
 							case "17": {
-							   	categoriesMenu.addClass('elektronika');
 							   	offerCategory.addClass('elektronika');
 							   	break;}
 							case "21": {
-							    categoriesMenu.addClass('kosmetyki');
 							    offerCategory.addClass('kosmetyki');
 							    break;}
 							case "25": {
-							    categoriesMenu.addClass('moda');
 							    offerCategory.addClass('moda');
 							    break;}
 							case "#": {
-							    categoriesMenu.addClass('dzieci');
 							    offerCategory.addClass('dzieci');
 							    break;}
 							case "#": {
-							    categoriesMenu.addClass('rozrywka');
 							    offerCategory.addClass('rozrywka');
 							    break;}
 							case "#": {
-							    categoriesMenu.addClass('podroze');
 							    offerCategory.addClass('podroze');
 							    break;}
 							case "#": {
-							    categoriesMenu.addClass('sport');
 							    offerCategory.addClass('sport');
 							    break;}
 						}	
+						categoriesMenu.addClass(offerCategory.attr('class')).removeClass('offer');
 						offerLogo.append(logo);
 						offerWrapper.append(offerCategory);
 					    offerCategory.append(offerInfo);
