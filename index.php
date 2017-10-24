@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+require realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR.'config.php';
 
 function getCategories() {
     $categories = [];
