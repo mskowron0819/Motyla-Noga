@@ -244,10 +244,7 @@ img{
 	text-align: center;
 }
 #dropdown{
-	position: absolute;
-	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	position: relative;
 	height: 50px;
 	width: 100%;
 	overflow: hidden;
@@ -259,7 +256,6 @@ img{
 }
 #dropdown.active {
 	height: auto;
-	top: 127%;
 }
 #dropdown li{
 	box-sizing: border-box;
@@ -307,17 +303,11 @@ img{
 	.category-title,.select-category{
 		height: 100%;
 	}
-	.select-category select{
-		position: absolute;
-   		top: 50%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);
-	}
-	.select-category:before{
-		right: 25px;
-	}
 	.category-title h1{
 		font-size: 26px;
+	}
+	#dropdown{
+		margin-top: 25px;
 	}
 }
 .moda, .moda .button{
