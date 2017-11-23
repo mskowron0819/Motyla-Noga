@@ -192,10 +192,10 @@ $( document ).ready(function() {
 							case "51": {
 							    offerCategory.addClass('rozrywka');
 							    break;}
-							case "#": {
+							case "47": {
 							    offerCategory.addClass('podroze');
 							    break;}
-							case "#": {
+							case "35": {
 							    offerCategory.addClass('sport');
 							    break;}
 						}	
