@@ -252,11 +252,11 @@ img{
 	border-radius: 10px;
 	z-index: 2;
 	padding: 0;
-	margin: 0;
 }
 #dropdown.active {
 	height: auto;
 }
+
 #dropdown li{
 	box-sizing: border-box;
 	text-transform: capitalize;
@@ -266,6 +266,10 @@ img{
 	text-align: center;
 	font-size: 20px;
 	list-style: none;
+	cursor: pointer;
+}
+#dropdown li:hover{
+
 }
 .active #selected{
 	display: none;

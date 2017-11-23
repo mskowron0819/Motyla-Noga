@@ -61,10 +61,10 @@ $( document ).ready(function() {
 			    case "25": {
 			        offerCategory.addClass('moda');
 			        break;}
-			    case "#": {
+			    case "3": {
 			        offerCategory.addClass('dzieci');
 			        break;}
-			    case "#": {
+			    case "51": {
 			        offerCategory.addClass('rozrywka');
 			        break;}
 			    case "#": {
@@ -186,10 +186,10 @@ $( document ).ready(function() {
 							case "25": {
 							    offerCategory.addClass('moda');
 							    break;}
-							case "#": {
+							case "3": {
 							    offerCategory.addClass('dzieci');
 							    break;}
-							case "#": {
+							case "51": {
 							    offerCategory.addClass('rozrywka');
 							    break;}
 							case "#": {
