@@ -104,16 +104,19 @@ function createFileCache() {
 }
 
 function init() {    
-    if ( createFileCache() ) {
+    if ( createFileCache() ) {        
         $categories = getCategories();
         $categoriesIds = array_keys($categories);
         if ( !empty($categoriesIds) ) {
             $couponsArr = [];
             saveToFile(CACHEFILEPATH, date('Y-m-d H:i:s').PHP_EOL);
             foreach ( $categoriesIds as $catId ) {
-                $coupons = getCouponsFromCategory($catId);                
+                $coupons = getCouponsFromCategory($catId);
                 if ( !empty($coupons) ) {
-                    $couponsArr[$categories[$catId]] = $coupons;//                    
+                    $couponsArr[$categories[$catId]] = $coupons;
+                    foreach ($couponsArr[$categories[$catId]] as $key => $value) {
+                        $couponsArr[$categories[$catId]][$key]['link_wygenerowany'] = str_replace('{affiliate_id}', '16185', $value['link_wygenerowany']);
+                    }
                 }        
             }
             saveToFile(JSONFILEPATH, json_encode($couponsArr, JSON_PRETTY_PRINT).PHP_EOL, 'w');
@@ -180,6 +183,5 @@ init();
 		</div>
 		
 	</div>
-
 </body>
 </html>
