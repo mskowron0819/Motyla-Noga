@@ -217,6 +217,7 @@ img{
 	top: 0;
 	display: none;
 	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 .categories-menu{
 	width: 100%;
@@ -269,7 +270,7 @@ img{
 	cursor: pointer;
 }
 #dropdown li:hover{
-
+	
 }
 .active #selected{
 	display: none;
