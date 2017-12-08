@@ -406,5 +406,31 @@
             "kategoria_ho_id": "51",
             "priorytet": null
         }
+    ],
+    "Sport i Hobby": [
+        {
+            "id": "780",
+            "nazwa": "Jesienna wyprzeda\u017c w Endo.",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1304&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fendo.pl%2Ftematy%2Fwyprzedaz%3Futm_source%3D4400516%26utm_medium%3Dsalesmedia%26utm_campaign%3Dcps",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1304\/logo.png",
+            "name": "Endo",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "35",
+            "priorytet": null
+        }
+    ],
+    "Podroze": [
+        {
+            "id": "780",
+            "nazwa": "Jesienna wyprzeda\u017c w Endo.",
+            "link_wygenerowany": "https:\/\/go.salesmedia.pl\/aff_c?offer_id=1304&aff_id={affiliate_id}&source=panel&url=http%3A%2F%2Fendo.pl%2Ftematy%2Fwyprzedaz%3Futm_source%3D4400516%26utm_medium%3Dsalesmedia%26utm_campaign%3Dcps",
+            "thumbnail_preview_uri": "https:\/\/media.go2speed.org\/brand\/files\/cubegroup\/1304\/logo.png",
+            "name": "Endo",
+            "typ": "2",
+            "tresc_kodu_rabatowego": "",
+            "kategoria_ho_id": "47",
+            "priorytet": null
+        }
     ]
 }
