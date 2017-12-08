@@ -104,16 +104,19 @@ function createFileCache() {
 }
 
 function init() {    
-    if ( createFileCache() ) {
+    if ( createFileCache() ) {        
         $categories = getCategories();
         $categoriesIds = array_keys($categories);
         if ( !empty($categoriesIds) ) {
             $couponsArr = [];
             saveToFile(CACHEFILEPATH, date('Y-m-d H:i:s').PHP_EOL);
             foreach ( $categoriesIds as $catId ) {
-                $coupons = getCouponsFromCategory($catId);                
+                $coupons = getCouponsFromCategory($catId);
                 if ( !empty($coupons) ) {
-                    $couponsArr[$categories[$catId]] = $coupons;//                    
+                    $couponsArr[$categories[$catId]] = $coupons;
+                    foreach ($couponsArr[$categories[$catId]] as $key => $value) {
+                        $couponsArr[$categories[$catId]][$key]['link_wygenerowany'] = str_replace('{affiliate_id}', '16185', $value['link_wygenerowany']);
+                    }
                 }        
             }
             saveToFile(JSONFILEPATH, json_encode($couponsArr, JSON_PRETTY_PRINT).PHP_EOL, 'w');
@@ -142,44 +145,52 @@ init();
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Motyla Noga- Link Nieaktywny</title>
-	<link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
-	<script type="text/javascript" src="assets/jquery-3.2.1.min.js"></script>
-	<script src="assets/app.js" type="text/javascript"></script>
-	<meta name="description" content="Link nieaktywny. Zapraszamy do zapoznania się z innymi promocjami.">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Motyla Noga- Link Nieaktywny</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script type="text/javascript" src="assets/jquery-3.2.1.min.js"></script>
+    <script src="assets/app.js" type="text/javascript"></script>
+    <meta name="description" content="Link nieaktywny. Zapraszamy do zapoznania się z innymi promocjami.">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MH8TPVM');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-	<!-- FIRST SCREEN -->
-	<div id="main-screen">
-		<header>
-			<img id="bg">
-		</header> 
-		<div id="main-screen-content">
-			<div class="container">
-				<div class="offers">
-				
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--SECOND SCREEN -->
-	<div id='coupon-screen'>
-		
-	</div>
-	<!--THIRD SCREEN -->
-	<div id="categories-screen">
-		<div class="categories-menu">
-			<div class="container"></div>
-		</div>
-		<div class="container">
-			<div class="offers"></div>
-		</div>
-		
-	</div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH8TPVM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- FIRST SCREEN -->
+    <div id="main-screen">
+        <header>
+            <img id="bg">
+        </header> 
+        <div id="main-screen-content">
+            <div class="container">
+                <div class="offers">
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SECOND SCREEN -->
+    <div id='coupon-screen'>
+
+    </div>
+    <!--THIRD SCREEN -->
+    <div id="categories-screen">
+        <div class="categories-menu">
+            <div class="container"></div>
+        </div>
+        <div class="container">
+            <div class="offers"></div>
+        </div>
+    </div>
 </body>
 </html>

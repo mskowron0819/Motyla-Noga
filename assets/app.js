@@ -16,15 +16,16 @@ $( document ).ready(function() {
 	var categoryOffers = $('#categories-screen .offers');
 	var categoriesFrame = $('#categories-screen');
 	var couponFrame = $('#coupon-screen');
-	var offersData = 'db/offers_c.json';
+	var offersData = 'db/offers_c.json?t='+(new Date()).getTime();
 	var categoriesMenu = $('.categories-menu');
 	var menuWrapper = $('.categories-menu .container');
 
 	function getOffers() {
         $.ajax({
+        	cache: false,
             dataType: 'json',
             url: offersData
-        }).done(function(data) {;
+        }).done(function(data) {
             loadOffers(data);
         }).fail(function(error) {
             console.log(error);
